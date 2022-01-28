@@ -6,3 +6,11 @@ $fourthColor     :#303030;
 .my_d-flex{
     display: flex;
 }
+
+.btn_singup{
+    color: $secondColor;
+    border: solid 1px $mainColor;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  

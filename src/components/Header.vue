@@ -59,6 +59,7 @@ ul{
       color: #000;
       padding: 10px 15px;
       text-decoration: none;
+      font-size: 10px;
 
       &.active, &:hover{
         color: $mainColor;

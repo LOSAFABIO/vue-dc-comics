@@ -137,7 +137,7 @@
       <div class="tail">
         <div class="streak">
             <div class="text">
-              <a href="#" class="text_uppercase bnt_singup">sing-up now!</a>
+              <a href="#" class="text_uppercase btn_singup">sing-up now!</a>
               <nav>
                 <ul>
                     <li><a href="#" class="text_uppercase">follow us</a></li>
@@ -308,12 +308,5 @@ h3{
     }
   }
 }   
-
-.bnt_singup{
-  color: $secondColor;
-  border: solid 1px $mainColor;
-  padding: 10px 15px;
-  text-decoration: none;
-}
 
 </style>
