@@ -1,13 +1,15 @@
 <template>
-  <div class="Book" v-for="(element, index) in comicsBook" :key="index">
-      <img :src="element.thumb" alt="">
-      <h2>{{element.series}}</h2>
-  </div>
+    <div class="container">
+        <div class="book" v-for="(element, index) in comicsBook" :key="index">
+            <img :src="element.thumb" alt="">
+            <h2>{{element.series}}</h2>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
-    name: Maincomicsbook,
+    name: "Maincomicsbook",
 
     data(){
         return {
@@ -92,6 +94,38 @@ export default {
 
 </script>
 
-<style>
+<style scoped lang="scss">
+
+@import "../../assets/style/Partials/Variables.scss";
+
+.container{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+
+.book{
+    width: calc(16% - 4px);
+    margin: 2px;
+    padding: 0 10px;
+    padding-top: 10px;
+    height: 150px;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        object-position: top right;
+    }
+
+    h2{
+        font-size: 12px;
+        color: $secondColor;
+    }
+}
 
 </style>

@@ -4,8 +4,7 @@
     <div class="comicsbook">
       <div class="text">
         <a href="#" class="text_uppercase btn_singup up">current series</a>
-        <div class="ciao"></div>
-    <!-- <Maincomicsbook /> -->
+        <Maincomicsbook />
         <a href="#" class="text_uppercase btn_singup down">load more</a>
       </div>
     </div>
@@ -13,13 +12,13 @@
 </template>
 
 <script>
-// import MainComicsBook from './commons/MainComicsBook.vue';
+import Maincomicsbook from "./commons/Maincomicsbook.vue"
 
 export default {
   name: 'Main',
-  // components: { 
-  //   Maincomicsbook 
-  //   }
+  components: { 
+    Maincomicsbook 
+    }
 }
 </script>
 
@@ -72,12 +71,6 @@ export default {
   font-size: 12px;
   padding: 10px 50px;
   transform: translate(-50%);
-}
-
-
-.ciao{
-  height: 450px;
-  width: 100%;
 }
 
 </style>
